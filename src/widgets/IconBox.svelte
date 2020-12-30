@@ -19,7 +19,6 @@
 </div>
 
 <style lang='scss'>
-    @import 'bulma/bulma.sass';
     p {
         font-size: 75%;
         padding: 0.5rem;

@@ -26,11 +26,10 @@
 </div>
 
 <style lang='scss'>
-    @import 'bulma/bulma.sass';
-
-    div :global(p){
+    .level-item :global(p){
         font-size: 75%;
-        @extend .p-0, .m-0;
+        padding: 0;
+        margin: 0;
     }
 
     #incentives {
@@ -39,8 +38,11 @@
     }
 
     #label {
+        font-size: 75%;
+        padding: 0;
+        margin: 0;
         position: absolute;
-        transform: rotate(270deg) translateX(-2.85rem);
+        transform: rotate(270deg) translateX(-3.1rem);
         transform-origin: top left;
     }
 

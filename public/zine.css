@@ -6,10 +6,16 @@
 
 
 
+
+
 @media screen {
     body {
         font-size: 102%;
         background: lightgrey;
+    }
+
+    .zine {
+        background-color: lightgrey;
     }
 
     .zine-page {
@@ -18,7 +24,6 @@
         width: 17.82rem;
         height: 25.2rem;
         margin: auto;
-        margin-top: 10px;
         padding: 2rem;
     }
 }
@@ -45,12 +50,17 @@
         display: grid;
         gap: 1.5px;
         background: lightgrey;
-        grid-template-areas:
-          "page-5 page-4 page-3 page-2"
-          "page-6 page-7 page-8 page-1"
-          "page-2b page-3b page-4b page-5b"
-          "page-1b page-8b page-7b page-6b"; 
+        /* grid-template-areas:
+          "page-9 page-7 page-5 page-3"
+          "page-11 page-13 page-8 page-1"
+          "page-4 page-6 page-8 page-10"
+          "page-2 page-8b page-13b page-12";  */
         /* transform: translateY(-0.2px); */
+        grid-template-areas:
+          "page-5 page-12 page-9 page-8"
+          "page-4 page-13 page-16 page-1"
+          "page-7 page-10 page-11 page-6"
+          "page-2 page-15 page-14 page-3"; 
         margin: 0;
     }
 
@@ -63,27 +73,27 @@
         margin: 0;
     }
 
-    .page-5, .page-4 {
+    .page-5, .page-12 {
         transform: rotate(180deg) translateX(-0.1px);
     }
     
-      .page-3,  .page-2 {
+      .page-9,  .page-8 {
           transform: rotate(180deg) translateX(0.1px);
     }
 
-    .page-5b, .page-4b {
+    .page-6, .page-11 {
         transform:rotate(180deg) translateX(-0.1px) translateY(49px);
     }
 
-    .page-3b, .page-2b {
+    .page-10, .page-7 {
         transform:rotate(180deg) translateX(0.1px) translateY(49.5px);
     }
 
-    .page-1b, .page-6b, .page-7b, .page-8b {
+    .page-2, .page-3, .page-14, .page-15 {
         transform: translateY(-72.1px);
     }
 
-    .page-6, .page-7, .page-8, .page-1 {
+    .page-4, .page-13, .page-16, .page-1 {
         transform: translateY(-23px);
     }
     
@@ -91,65 +101,65 @@
         grid-area: page-1;
     }
 
-    .page-2 {
-        grid-area: page-2;
-    
-    }
-
     .page-3 {
         grid-area: page-3;
-    }
-
-    .page-4 {
-        grid-area: page-4;
+    
     }
 
     .page-5 {
         grid-area: page-5;
     }
 
-    .page-6 {
-        grid-area: page-6;
-    }
-
     .page-7 {
         grid-area: page-7;
+    }
+
+    .page-9 {
+        grid-area: page-9;
+    }
+
+    .page-11 {
+        grid-area: page-11;
+    }
+
+    .page-13 {
+        grid-area: page-13;
+    }
+
+    .page-15 {
+        grid-area: page-15;
+    }
+
+    .page-2 {
+        grid-area: page-2;
+    }
+
+    .page-4 {
+        grid-area: page-4;
+    
+    }
+
+    .page-6 {
+        grid-area: page-6;
     }
 
     .page-8 {
         grid-area: page-8;
     }
 
-    .page-1b {
-        grid-area: page-1b;
+    .page-10 {
+        grid-area: page-10;
     }
 
-    .page-2b {
-        grid-area: page-2b;
-    
+    .page-12 {
+        grid-area: page-12;
     }
 
-    .page-3b {
-        grid-area: page-3b;
+    .page-14 {
+        grid-area: page-14;
     }
 
-    .page-4b {
-        grid-area: page-4b;
-    }
-
-    .page-5b {
-        grid-area: page-5b;
-    }
-
-    .page-6b {
-        grid-area: page-6b;
-    }
-
-    .page-7b {
-        grid-area: page-7b;
-    }
-
-    .page-8b {
-        grid-area: page-8b;
+    .page-16 {
+        grid-area: page-16;
     }
 }
