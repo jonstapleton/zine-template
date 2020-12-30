@@ -2,8 +2,8 @@
     import Page from "../Page.svelte"
     export let page;
 
-    import IconBox from '../../widgets/IconBox.svelte';
-    import {faTruck, faCity, faHandHoldingUsd, faPlane, faShoppingCart, faSkull, faTools, faShieldAlt} from '@fortawesome/free-solid-svg-icons'
+    import IconBox from 'widgets/IconBox.svelte';
+    import {faTruck, faCity, faHandHoldingUsd, faPlane, faShoppingCart, faSkull, faTools, faShieldAlt} from 'icons'
 </script>
 
 <Page page={page}>

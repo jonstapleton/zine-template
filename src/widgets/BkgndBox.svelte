@@ -1,6 +1,6 @@
 <script>
     import Fa from 'svelte-fa';
-    import Term from '../Term.svelte';
+    import Term from './Term.svelte';
     export let icon;
     export let name;
 </script>

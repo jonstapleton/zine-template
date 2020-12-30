@@ -1,10 +1,10 @@
 <script>
     import Page from '../Page.svelte';
-    import BkgndBox from '../../widgets/BkgndBox.svelte';
-    import Term from '../../Term.svelte'
+    import BkgndBox from 'widgets/BkgndBox.svelte';
+    import Term from 'widgets/Term.svelte'
     export let page;
 
-    import {faHandHoldingUsd} from '@fortawesome/free-solid-svg-icons';
+    import {faHandHoldingUsd} from 'icons';
 </script>
 
 <Page page={page}>

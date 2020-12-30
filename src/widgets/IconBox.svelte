@@ -3,7 +3,7 @@
     export let icon;
 
     import Fa from 'svelte-fa'
-    import Term from '../Term.svelte'
+    import Term from './Term.svelte'
 </script>
 
 <div class='box content p-0 mx-1 my-2'>

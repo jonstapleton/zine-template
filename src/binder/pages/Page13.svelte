@@ -2,9 +2,9 @@
     import Page from '../Page.svelte';
     export let page;
 
-    import BkgndBox from '../../widgets/BkgndBox.svelte'
-    import Term from '../../Term.svelte'
-    import {faTools} from '@fortawesome/free-solid-svg-icons'
+    import BkgndBox from 'widgets/BkgndBox.svelte'
+    import Term from 'widgets/Term.svelte'
+    import {faTools} from 'icons'
 </script>
 
 <Page page={page}>

@@ -1,5 +1,5 @@
 <script>
-    import Term from '../../Term.svelte';
+    import Term from 'widgets/Term.svelte';
     import Page from '../Page.svelte';
     export let page;
 </script>

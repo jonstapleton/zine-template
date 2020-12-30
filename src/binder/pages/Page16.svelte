@@ -2,7 +2,7 @@
     import Page from '../Page.svelte';
     export let page;
 
-    import Term from '../../Term.svelte'
+    import Term from 'widgets/Term.svelte'
 </script>
 
 <Page page={page}>
