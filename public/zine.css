@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+
+@media screen {
+    body {
+        font-size: 102%;
+        background: lightgrey;
+    }
+
+    .zine-page {
+        background: white;
+        overflow: hidden;
+        width: 17.82rem;
+        height: 25.2rem;
+        margin: auto;
+        margin-top: 10px;
+        padding: 2rem;
+    }
+}
+
+@media print {
+
+    body {
+        transform: translateX(-8px) translateY(-8px);
+    }
+
+    * {
+        font-size: 99%
+    }
+
+    @page {
+        size: A4 landscape;
+        margin: 0;
+        bleed: 0;
+    }
+
+    .zine {
+        width: 100vw;
+        height: 200vh;
+        display: grid;
+        gap: 1.5px;
+        background: lightgrey;
+        grid-template-areas:
+          "page-5 page-4 page-3 page-2"
+          "page-6 page-7 page-8 page-1"
+          "page-2b page-3b page-4b page-5b"
+          "page-1b page-8b page-7b page-6b"; 
+        /* transform: translateY(-0.2px); */
+        margin: 0;
+    }
+
+    .zine-page {
+        background: white;
+        padding: 2rem;
+        overflow: hidden;
+        width: 24.9vw;
+        height: 49.9vh;
+        margin: 0;
+    }
+
+    .page-5, .page-4 {
+        transform: rotate(180deg) translateX(-0.1px);
+    }
+    
+      .page-3,  .page-2 {
+          transform: rotate(180deg) translateX(0.1px);
+    }
+
+    .page-5b, .page-4b {
+        transform:rotate(180deg) translateX(-0.1px) translateY(49px);
+    }
+
+    .page-3b, .page-2b {
+        transform:rotate(180deg) translateX(0.1px) translateY(49.5px);
+    }
+
+    .page-1b, .page-6b, .page-7b, .page-8b {
+        transform: translateY(-72.1px);
+    }
+
+    .page-6, .page-7, .page-8, .page-1 {
+        transform: translateY(-23px);
+    }
+    
+    .page-1 {
+        grid-area: page-1;
+    }
+
+    .page-2 {
+        grid-area: page-2;
+    
+    }
+
+    .page-3 {
+        grid-area: page-3;
+    }
+
+    .page-4 {
+        grid-area: page-4;
+    }
+
+    .page-5 {
+        grid-area: page-5;
+    }
+
+    .page-6 {
+        grid-area: page-6;
+    }
+
+    .page-7 {
+        grid-area: page-7;
+    }
+
+    .page-8 {
+        grid-area: page-8;
+    }
+
+    .page-1b {
+        grid-area: page-1b;
+    }
+
+    .page-2b {
+        grid-area: page-2b;
+    
+    }
+
+    .page-3b {
+        grid-area: page-3b;
+    }
+
+    .page-4b {
+        grid-area: page-4b;
+    }
+
+    .page-5b {
+        grid-area: page-5b;
+    }
+
+    .page-6b {
+        grid-area: page-6b;
+    }
+
+    .page-7b {
+        grid-area: page-7b;
+    }
+
+    .page-8b {
+        grid-area: page-8b;
+    }
+}
