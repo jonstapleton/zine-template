@@ -4,5 +4,5 @@
 </script>
 
 <Page page={page}>
-    <h1>Urchin Art</h1>
+    <h1>Page 6</h1>
 </Page>

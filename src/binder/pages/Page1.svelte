@@ -4,6 +4,5 @@
 </script>
 
 <Page page={page}>
-    <h1>Cover Page</h1>
+    <h1>Page 1</h1>
 </Page>
-
